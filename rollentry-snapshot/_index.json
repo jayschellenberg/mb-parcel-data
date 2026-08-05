@@ -1,19 +1,8 @@
 {
-  "snapshot_date": "2026-05-06",
-  "generated_at": "2026-06-03T14:31:07-0500",
-  "source": "RollEntry_20260506.gpkg",
-  "fields": [
-    "OBJECTID",
-    "Roll_No_Txt",
-    "Property_Address",
-    "Municipality",
-    "Muni_Name_With_Typ",
-    "Asmt_Roll",
-    "Dwelling_Units",
-    "Frontage_or_Area",
-    "Total_Value",
-    "Asmt_Rpt_Url"
-  ],
+  "snapshot_date": "2026-08-04",
+  "generated_at": "2026-08-05T15:53:16-0500",
+  "source": "RollEntry_20260804.gpkg",
+  "fields": ["OBJECTID", "Roll_No_Txt", "Property_Address", "Municipality", "Muni_Name_With_Typ", "Asmt_Roll", "Dwelling_Units", "Frontage_or_Area", "Total_Value", "Asmt_Rpt_Url"],
   "simplify_tolerance_deg": 0.0001,
   "munis": {
     "AGHAMING (NORTHERN SETTLEMENT)": {
@@ -23,32 +12,32 @@
     },
     "ALEXANDER (RM)": {
       "file": "ALEXANDER_RM.json",
-      "count": 7055,
+      "count": 7242,
       "muni_no": 600
     },
     "ALONSA (RM)": {
       "file": "ALONSA_RM.json",
-      "count": 5432,
+      "count": 5492,
       "muni_no": 601
     },
     "ALTONA (TOWN)": {
       "file": "ALTONA_TOWN.json",
-      "count": 2058,
+      "count": 2094,
       "muni_no": 400
     },
     "ARBORG (TOWN)": {
       "file": "ARBORG_TOWN.json",
-      "count": 655,
+      "count": 656,
       "muni_no": 300
     },
     "ARGYLE (RM)": {
       "file": "ARGYLE_RM.json",
-      "count": 1846,
+      "count": 1893,
       "muni_no": 102
     },
     "ARMSTRONG (RM)": {
       "file": "ARMSTRONG_RM.json",
-      "count": 3894,
+      "count": 3953,
       "muni_no": 602
     },
     "BADEN (NORTHERN SETTLEMENT)": {
@@ -63,7 +52,7 @@
     },
     "BEAUSEJOUR (TOWN)": {
       "file": "BEAUSEJOUR_TOWN.json",
-      "count": 1784,
+      "count": 1786,
       "muni_no": 401
     },
     "BERENS RIVER (NORTHERN COMMUNITY)": {
@@ -73,27 +62,27 @@
     },
     "BIFROST-RIVERTON (MUNICIPALITY)": {
       "file": "BIFROST-RIVERTON_MUNICIPALITY.json",
-      "count": 4770,
+      "count": 4828,
       "muni_no": 105
     },
     "BISSETT (NORTHERN COMMUNITY)": {
       "file": "BISSETT_NORTHERN_COMMUNITY.json",
-      "count": 298,
+      "count": 326,
       "muni_no": 746
     },
     "BOISSEVAIN-MORTON (MUNICIPALITY)": {
       "file": "BOISSEVAIN-MORTON_MUNICIPALITY.json",
-      "count": 2537,
+      "count": 2581,
       "muni_no": 153
     },
     "BRANDON (CITY)": {
       "file": "BRANDON_CITY.json",
-      "count": 16891,
+      "count": 17330,
       "muni_no": 500
     },
     "BRENDA-WASKADA (MUNICIPALITY)": {
       "file": "BRENDA-WASKADA_MUNICIPALITY.json",
-      "count": 1777,
+      "count": 1812,
       "muni_no": 109
     },
     "BROCHET (NORTHERN COMMUNITY)": {
@@ -103,7 +92,7 @@
     },
     "BROKENHEAD (RM)": {
       "file": "BROKENHEAD_RM.json",
-      "count": 4357,
+      "count": 4438,
       "muni_no": 110
     },
     "CAMPERVILLE (NORTHERN COMMUNITY)": {
@@ -113,7 +102,7 @@
     },
     "CARBERRY (TOWN)": {
       "file": "CARBERRY_TOWN.json",
-      "count": 915,
+      "count": 918,
       "muni_no": 407
     },
     "CARMAN (TOWN)": {
@@ -123,7 +112,7 @@
     },
     "CARTIER (RM)": {
       "file": "CARTIER_RM.json",
-      "count": 2268,
+      "count": 2317,
       "muni_no": 112
     },
     "CARTWRIGHT-ROBLIN  (MUNICIPALITY)": {
@@ -138,12 +127,12 @@
     },
     "CLANWILLIAM-ERICKSON (MUNICIPALITY)": {
       "file": "CLANWILLIAM-ERICKSON_MUNICIPALITY.json",
-      "count": 1396,
+      "count": 1397,
       "muni_no": 114
     },
     "COLDWELL (RM)": {
       "file": "COLDWELL_RM.json",
-      "count": 2420,
+      "count": 2490,
       "muni_no": 115
     },
     "CORMORANT (NORTHERN COMMUNITY)": {
@@ -153,7 +142,7 @@
     },
     "CORNWALLIS (RM)": {
       "file": "CORNWALLIS_RM.json",
-      "count": 2032,
+      "count": 2050,
       "muni_no": 116
     },
     "CRANE RIVER (NORTHERN COMMUNITY)": {
@@ -173,12 +162,12 @@
     },
     "DAUPHIN (CITY)": {
       "file": "DAUPHIN_CITY.json",
-      "count": 3628,
+      "count": 3680,
       "muni_no": 411
     },
     "DAUPHIN (RM)": {
       "file": "DAUPHIN_RM.json",
-      "count": 3505,
+      "count": 3552,
       "muni_no": 118
     },
     "DAUPHIN RIVER (NORTHERN COMMUNITY)": {
@@ -193,12 +182,12 @@
     },
     "DE SALABERRY (RM)": {
       "file": "DE_SALABERRY_RM.json",
-      "count": 3277,
+      "count": 3349,
       "muni_no": 119
     },
     "DELORAINE-WINCHESTER (MUNICIPALITY)": {
       "file": "DELORAINE-WINCHESTER_MUNICIPALITY.json",
-      "count": 2265,
+      "count": 2299,
       "muni_no": 205
     },
     "DUCK BAY (NORTHERN COMMUNITY)": {
@@ -208,12 +197,12 @@
     },
     "DUFFERIN (RM)": {
       "file": "DUFFERIN_RM.json",
-      "count": 2506,
+      "count": 2554,
       "muni_no": 120
     },
     "DUNNOTTAR (VILLAGE)": {
       "file": "DUNNOTTAR_VILLAGE.json",
-      "count": 1344,
+      "count": 1384,
       "muni_no": 311
     },
     "EAST ST PAUL (RM)": {
@@ -233,22 +222,22 @@
     },
     "ELTON (RM)": {
       "file": "ELTON_RM.json",
-      "count": 1497,
+      "count": 1498,
       "muni_no": 124
     },
     "EMERSON-FRANKLIN (MUNICIPALITY)": {
       "file": "EMERSON-FRANKLIN_MUNICIPALITY.json",
-      "count": 3317,
+      "count": 3370,
       "muni_no": 127
     },
     "ETHELBERT (MUNICIPALITY)": {
       "file": "ETHELBERT_MUNICIPALITY.json",
-      "count": 1935,
+      "count": 1974,
       "muni_no": 126
     },
     "FISHER (RM)": {
       "file": "FISHER_RM.json",
-      "count": 3180,
+      "count": 3216,
       "muni_no": 605
     },
     "FISHER BAY (NORTHERN COMMUNITY)": {
@@ -258,12 +247,12 @@
     },
     "FLIN FLON (CITY)": {
       "file": "FLIN_FLON_CITY.json",
-      "count": 2822,
+      "count": 2851,
       "muni_no": 540
     },
     "GILBERT PLAINS  (MUNICIPALITY)": {
       "file": "GILBERT_PLAINS_MUNICIPALITY.json",
-      "count": 2284,
+      "count": 2334,
       "muni_no": 323
     },
     "GILLAM (TOWN)": {
@@ -273,17 +262,17 @@
     },
     "GIMLI (RM)": {
       "file": "GIMLI_RM.json",
-      "count": 6862,
+      "count": 6963,
       "muni_no": 129
     },
     "GLENBORO-SOUTH CYPRESS (MUNICIPALITY)": {
       "file": "GLENBORO-SOUTH_CYPRESS_MUNICIPALITY.json",
-      "count": 1880,
+      "count": 1893,
       "muni_no": 187
     },
     "GLENELLA-LANSDOWNE (MUNICIPALITY)": {
       "file": "GLENELLA-LANSDOWNE_MUNICIPALITY.json",
-      "count": 2541,
+      "count": 2567,
       "muni_no": 142
     },
     "GODS LAKE NARROWS (NORTHERN COMMUNITY)": {
@@ -293,7 +282,7 @@
     },
     "GRAHAMDALE (RM)": {
       "file": "GRAHAMDALE_RM.json",
-      "count": 5434,
+      "count": 5540,
       "muni_no": 606
     },
     "GRAND RAPIDS (TOWN)": {
@@ -303,32 +292,32 @@
     },
     "GRANDVIEW  (MUNICIPALITY)": {
       "file": "GRANDVIEW_MUNICIPALITY.json",
-      "count": 2135,
+      "count": 2145,
       "muni_no": 132
     },
     "GRASSLAND (MUNICIPALITY)": {
       "file": "GRASSLAND_MUNICIPALITY.json",
-      "count": 3018,
+      "count": 3031,
       "muni_no": 111
     },
     "GREY (RM)": {
       "file": "GREY_RM.json",
-      "count": 2981,
+      "count": 3032,
       "muni_no": 133
     },
     "HAMIOTA  (MUNICIPALITY)": {
       "file": "HAMIOTA_MUNICIPALITY.json",
-      "count": 1577,
+      "count": 1622,
       "muni_no": 331
     },
     "HANOVER (RM)": {
       "file": "HANOVER_RM.json",
-      "count": 7582,
+      "count": 7780,
       "muni_no": 135
     },
     "HARRISON PARK (MUNICIPALITY)": {
       "file": "HARRISON_PARK_MUNICIPALITY.json",
-      "count": 4202,
+      "count": 4275,
       "muni_no": 609
     },
     "HARWILL (NORTHERN COMMUNITY)": {
@@ -338,27 +327,27 @@
     },
     "HEADINGLEY (RM)": {
       "file": "HEADINGLEY_RM.json",
-      "count": 2477,
+      "count": 2476,
       "muni_no": 208
     },
     "HERB LAKE LANDING (NORTHERN SETTLEMENT)": {
       "file": "HERB_LAKE_LANDING_NORTHERN_SETTLEMENT.json",
-      "count": 22,
+      "count": 26,
       "muni_no": 738
     },
     "HOMEBROOK-PEONAN POINT (NORTHERN COMMUNITY)": {
       "file": "HOMEBROOK-PEONAN_POINT_NORTHERN_COMMUNITY.json",
-      "count": 559,
+      "count": 636,
       "muni_no": 754
     },
     "ILFORD (NORTHERN COMMUNITY)": {
       "file": "ILFORD_NORTHERN_COMMUNITY.json",
-      "count": 75,
+      "count": 82,
       "muni_no": 739
     },
     "INDIGENOUS&NORTHERN RELATIONS (700)": {
       "file": "INDIGENOUS_NORTHERN_RELATIONS_700.json",
-      "count": 189,
+      "count": 197,
       "muni_no": 700
     },
     "INDIGENOUS&NORTHERN RELATIONS (701)": {
@@ -383,12 +372,12 @@
     },
     "KELSEY (RM)": {
       "file": "KELSEY_RM.json",
-      "count": 2989,
+      "count": 3049,
       "muni_no": 604
     },
     "KILLARNEY TURTLE MOUNTAIN (MUNICIPALITY)": {
       "file": "KILLARNEY_TURTLE_MOUNTAIN_MUNICIPALITY.json",
-      "count": 3621,
+      "count": 3673,
       "muni_no": 196
     },
     "LA BROQUERIE (RM)": {
@@ -398,7 +387,7 @@
     },
     "LAC DU BONNET (RM)": {
       "file": "LAC_DU_BONNET_RM.json",
-      "count": 5675,
+      "count": 5735,
       "muni_no": 139
     },
     "LAC DU BONNET (TOWN)": {
@@ -408,7 +397,7 @@
     },
     "LAKESHORE (RM)": {
       "file": "LAKESHORE_RM.json",
-      "count": 3419,
+      "count": 3452,
       "muni_no": 143
     },
     "LEAF RAPIDS (TOWN)": {
@@ -428,12 +417,12 @@
     },
     "LORNE (MUNICIPALITY)": {
       "file": "LORNE_MUNICIPALITY.json",
-      "count": 2963,
+      "count": 2998,
       "muni_no": 144
     },
     "LOUISE (MUNICIPALITY)": {
       "file": "LOUISE_MUNICIPALITY.json",
-      "count": 2660,
+      "count": 2705,
       "muni_no": 145
     },
     "LYNN LAKE (TOWN)": {
@@ -443,12 +432,12 @@
     },
     "MACDONALD (RM)": {
       "file": "MACDONALD_RM.json",
-      "count": 6089,
+      "count": 6201,
       "muni_no": 146
     },
     "MALLARD (NORTHERN COMMUNITY)": {
       "file": "MALLARD_NORTHERN_COMMUNITY.json",
-      "count": 87,
+      "count": 104,
       "muni_no": 728
     },
     "MANIGOTAGAN (NORTHERN COMMUNITY)": {
@@ -463,7 +452,7 @@
     },
     "MCCREARY (MUNICIPALITY)": {
       "file": "MCCREARY_MUNICIPALITY.json",
-      "count": 1330,
+      "count": 1347,
       "muni_no": 147
     },
     "MEADOW PORTAGE (NORTHERN COMMUNITY)": {
@@ -478,22 +467,22 @@
     },
     "MINITONAS-BOWSMAN (MUNICIPALITY)": {
       "file": "MINITONAS-BOWSMAN_MUNICIPALITY.json",
-      "count": 2590,
+      "count": 2644,
       "muni_no": 149
     },
     "MINNEDOSA (TOWN)": {
       "file": "MINNEDOSA_TOWN.json",
-      "count": 1585,
+      "count": 1623,
       "muni_no": 431
     },
     "MINTO-ODANAH (RM)": {
       "file": "MINTO-ODANAH_RM.json",
-      "count": 1722,
+      "count": 1778,
       "muni_no": 159
     },
     "MONTCALM (RM)": {
       "file": "MONTCALM_RM.json",
-      "count": 1748,
+      "count": 1777,
       "muni_no": 151
     },
     "MOOSE LAKE (NORTHERN COMMUNITY)": {
@@ -503,12 +492,12 @@
     },
     "MORDEN (CITY)": {
       "file": "MORDEN_CITY.json",
-      "count": 4430,
+      "count": 4482,
       "muni_no": 433
     },
     "MORRIS (RM)": {
       "file": "MORRIS_RM.json",
-      "count": 3907,
+      "count": 3968,
       "muni_no": 152
     },
     "MORRIS (TOWN)": {
@@ -518,17 +507,17 @@
     },
     "MOSSEY RIVER (MUNICIPALITY)": {
       "file": "MOSSEY_RIVER_MUNICIPALITY.json",
-      "count": 2784,
+      "count": 2827,
       "muni_no": 154
     },
     "MOUNTAIN (RM)": {
       "file": "MOUNTAIN_RM.json",
-      "count": 5252,
+      "count": 5291,
       "muni_no": 617
     },
     "MYSTERY LAKE (LGD)": {
       "file": "MYSTERY_LAKE_LGD.json",
-      "count": 111,
+      "count": 118,
       "muni_no": 608
     },
     "NATIONAL MILLS (NORTHERN COMMUNITY)": {
@@ -538,7 +527,7 @@
     },
     "NEEPAWA (TOWN)": {
       "file": "NEEPAWA_TOWN.json",
-      "count": 1769,
+      "count": 1828,
       "muni_no": 437
     },
     "NELSON HOUSE  (NORTHERN COMMUNITY)": {
@@ -548,22 +537,22 @@
     },
     "NIVERVILLE (TOWN)": {
       "file": "NIVERVILLE_TOWN.json",
-      "count": 2610,
+      "count": 2705,
       "muni_no": 340
     },
     "NORFOLK TREHERNE (MUNICIPALITY)": {
       "file": "NORFOLK_TREHERNE_MUNICIPALITY.json",
-      "count": 2043,
+      "count": 2090,
       "muni_no": 188
     },
     "NORTH CYPRESS-LANGFORD (MUNICIPALITY)": {
       "file": "NORTH_CYPRESS-LANGFORD_MUNICIPALITY.json",
-      "count": 3793,
+      "count": 3856,
       "muni_no": 155
     },
     "NORTH NORFOLK (MUNICIPALITY)": {
       "file": "NORTH_NORFOLK_MUNICIPALITY.json",
-      "count": 3592,
+      "count": 3653,
       "muni_no": 156
     },
     "NORWAY HOUSE (NORTHERN COMMUNITY)": {
@@ -573,12 +562,12 @@
     },
     "OAKLAND-WAWANESA (MUNICIPALITY)": {
       "file": "OAKLAND-WAWANESA_MUNICIPALITY.json",
-      "count": 1677,
+      "count": 1676,
       "muni_no": 157
     },
     "OAKVIEW (RM)": {
       "file": "OAKVIEW_RM.json",
-      "count": 2767,
+      "count": 2765,
       "muni_no": 107
     },
     "PELICAN RAPIDS (NORTHERN COMMUNITY)": {
@@ -588,17 +577,17 @@
     },
     "PEMBINA (MUNICIPALITY)": {
       "file": "PEMBINA_MUNICIPALITY.json",
-      "count": 3163,
+      "count": 3221,
       "muni_no": 161
     },
     "PIKWITONEI (NORTHERN COMMUNITY)": {
       "file": "PIKWITONEI_NORTHERN_COMMUNITY.json",
-      "count": 98,
+      "count": 113,
       "muni_no": 712
     },
     "PINAWA (LGD)": {
       "file": "PINAWA_LGD.json",
-      "count": 1195,
+      "count": 1193,
       "muni_no": 616
     },
     "PINE DOCK (NORTHERN COMMUNITY)": {
@@ -608,37 +597,37 @@
     },
     "PINEY (RM)": {
       "file": "PINEY_RM.json",
-      "count": 3674,
+      "count": 3700,
       "muni_no": 610
     },
     "PIPESTONE (RM)": {
       "file": "PIPESTONE_RM.json",
-      "count": 2712,
+      "count": 2758,
       "muni_no": 162
     },
     "PORTAGE LA PRAIRIE (CITY)": {
       "file": "PORTAGE_LA_PRAIRIE_CITY.json",
-      "count": 5466,
+      "count": 5516,
       "muni_no": 550
     },
     "PORTAGE LA PRAIRIE (RM)": {
       "file": "PORTAGE_LA_PRAIRIE_RM.json",
-      "count": 6678,
+      "count": 6784,
       "muni_no": 163
     },
     "POWERVIEW-PINE FALLS (TOWN)": {
       "file": "POWERVIEW-PINE_FALLS_TOWN.json",
-      "count": 645,
+      "count": 644,
       "muni_no": 347
     },
     "PRAIRIE LAKES (RM)": {
       "file": "PRAIRIE_LAKES_RM.json",
-      "count": 3128,
+      "count": 3138,
       "muni_no": 192
     },
     "PRAIRIE VIEW  (MUNICIPALITY)": {
       "file": "PRAIRIE_VIEW_MUNICIPALITY.json",
-      "count": 3965,
+      "count": 4061,
       "muni_no": 403
     },
     "PRINCESS HARBOUR (NORTHERN SETTLEMENT)": {
@@ -653,32 +642,32 @@
     },
     "REYNOLDS (RM)": {
       "file": "REYNOLDS_RM.json",
-      "count": 4923,
+      "count": 5044,
       "muni_no": 611
     },
     "RHINELAND (MUNICIPALITY)": {
       "file": "RHINELAND_MUNICIPALITY.json",
-      "count": 5089,
+      "count": 5158,
       "muni_no": 164
     },
     "RIDING MOUNTAIN WEST (RM)": {
       "file": "RIDING_MOUNTAIN_WEST_RM.json",
-      "count": 4012,
+      "count": 4053,
       "muni_no": 181
     },
     "RITCHOT (RM)": {
       "file": "RITCHOT_RM.json",
-      "count": 4511,
+      "count": 4676,
       "muni_no": 165
     },
     "RIVERDALE  (MUNICIPALITY)": {
       "file": "RIVERDALE_MUNICIPALITY.json",
-      "count": 1974,
+      "count": 2018,
       "muni_no": 443
     },
     "ROBLIN (MUNICIPALITY)": {
       "file": "ROBLIN_MUNICIPALITY.json",
-      "count": 4197,
+      "count": 4269,
       "muni_no": 182
     },
     "ROCK RIDGE (NORTHERN COMMUNITY)": {
@@ -688,22 +677,22 @@
     },
     "ROCKWOOD (RM)": {
       "file": "ROCKWOOD_RM.json",
-      "count": 4985,
+      "count": 5034,
       "muni_no": 168
     },
     "ROLAND (RM)": {
       "file": "ROLAND_RM.json",
-      "count": 1314,
+      "count": 1317,
       "muni_no": 169
     },
     "ROSEDALE (RM)": {
       "file": "ROSEDALE_RM.json",
-      "count": 1980,
+      "count": 2035,
       "muni_no": 170
     },
     "ROSSBURN  (MUNICIPALITY)": {
       "file": "ROSSBURN_MUNICIPALITY.json",
-      "count": 2011,
+      "count": 2060,
       "muni_no": 353
     },
     "ROSSER (RM)": {
@@ -718,12 +707,12 @@
     },
     "SALT POINT (NORTHERN SETTLEMENT)": {
       "file": "SALT_POINT_NORTHERN_SETTLEMENT.json",
-      "count": 13,
+      "count": 16,
       "muni_no": 731
     },
     "SELKIRK (CITY)": {
       "file": "SELKIRK_CITY.json",
-      "count": 4072,
+      "count": 4122,
       "muni_no": 447
     },
     "SEYMOURVILLE (NORTHERN COMMUNITY)": {
@@ -738,17 +727,17 @@
     },
     "SIFTON (RM)": {
       "file": "SIFTON_RM.json",
-      "count": 2375,
+      "count": 2427,
       "muni_no": 184
     },
     "SNOW LAKE (TOWN)": {
       "file": "SNOW_LAKE_TOWN.json",
-      "count": 732,
+      "count": 738,
       "muni_no": 448
     },
     "SOURIS-GLENWOOD (MUNICIPALITY)": {
       "file": "SOURIS-GLENWOOD_MUNICIPALITY.json",
-      "count": 2110,
+      "count": 2203,
       "muni_no": 449
     },
     "SOUTH INDIAN LAKE (NORTHERN COMMUNITY)": {
@@ -763,27 +752,27 @@
     },
     "SPRINGFIELD (RM)": {
       "file": "SPRINGFIELD_RM.json",
-      "count": 8837,
+      "count": 9103,
       "muni_no": 189
     },
     "ST ANDREWS (RM)": {
       "file": "ST_ANDREWS_RM.json",
-      "count": 7112,
+      "count": 7239,
       "muni_no": 174
     },
     "ST CLEMENTS (RM)": {
       "file": "ST_CLEMENTS_RM.json",
-      "count": 8395,
+      "count": 8485,
       "muni_no": 176
     },
     "ST FRANCOIS XAVIER (RM)": {
       "file": "ST_FRANCOIS_XAVIER_RM.json",
-      "count": 950,
+      "count": 957,
       "muni_no": 177
     },
     "ST LAURENT (RM)": {
       "file": "ST_LAURENT_RM.json",
-      "count": 2823,
+      "count": 2878,
       "muni_no": 178
     },
     "ST PIERRE-JOLYS (VILLAGE)": {
@@ -793,27 +782,27 @@
     },
     "STANLEY (RM)": {
       "file": "STANLEY_RM.json",
-      "count": 4528,
+      "count": 4616,
       "muni_no": 190
     },
     "STE ANNE (RM)": {
       "file": "STE_ANNE_RM.json",
-      "count": 2952,
+      "count": 3000,
       "muni_no": 175
     },
     "STE ANNE (TOWN)": {
       "file": "STE_ANNE_TOWN.json",
-      "count": 1107,
+      "count": 1109,
       "muni_no": 351
     },
     "STE. ROSE (MUNICIPALITY)": {
       "file": "STE._ROSE_MUNICIPALITY.json",
-      "count": 1879,
+      "count": 1931,
       "muni_no": 359
     },
     "STEINBACH (CITY)": {
       "file": "STEINBACH_CITY.json",
-      "count": 7018,
+      "count": 7197,
       "muni_no": 451
     },
     "STONEWALL (TOWN)": {
@@ -823,22 +812,22 @@
     },
     "STUARTBURN (RM)": {
       "file": "STUARTBURN_RM.json",
-      "count": 2653,
+      "count": 2699,
       "muni_no": 612
     },
     "SWAN RIVER (TOWN)": {
       "file": "SWAN_RIVER_TOWN.json",
-      "count": 2198,
+      "count": 2240,
       "muni_no": 455
     },
     "SWAN VALLEY WEST (MUNICIPALITY)": {
       "file": "SWAN_VALLEY_WEST_MUNICIPALITY.json",
-      "count": 3641,
+      "count": 3702,
       "muni_no": 193
     },
     "TACHE (RM)": {
       "file": "TACHE_RM.json",
-      "count": 5799,
+      "count": 5871,
       "muni_no": 194
     },
     "TEULON (TOWN)": {
@@ -848,7 +837,7 @@
     },
     "THE PAS (TOWN)": {
       "file": "THE_PAS_TOWN.json",
-      "count": 2267,
+      "count": 2294,
       "muni_no": 457
     },
     "THICKET PORTAGE (NORTHERN COMMUNITY)": {
@@ -858,22 +847,22 @@
     },
     "THOMPSON (CITY)": {
       "file": "THOMPSON_CITY.json",
-      "count": 3944,
+      "count": 3989,
       "muni_no": 560
     },
     "THOMPSON (RM)": {
       "file": "THOMPSON_RM.json",
-      "count": 1472,
+      "count": 1474,
       "muni_no": 195
     },
     "TWO BORDERS (MUNICIPALITY)": {
       "file": "TWO_BORDERS_MUNICIPALITY.json",
-      "count": 4180,
+      "count": 4316,
       "muni_no": 122
     },
     "VICTORIA (RM)": {
       "file": "VICTORIA_RM.json",
-      "count": 1577,
+      "count": 1603,
       "muni_no": 197
     },
     "VICTORIA BEACH (RM)": {
@@ -883,7 +872,7 @@
     },
     "VIRDEN (TOWN)": {
       "file": "VIRDEN_TOWN.json",
-      "count": 1741,
+      "count": 1781,
       "muni_no": 461
     },
     "WABOWDEN (NORTHERN COMMUNITY)": {
@@ -893,57 +882,57 @@
     },
     "WALLACE-WOODWORTH (RM)": {
       "file": "WALLACE-WOODWORTH_RM.json",
-      "count": 4358,
+      "count": 4455,
       "muni_no": 199
     },
     "WATERHEN (NORTHERN COMMUNITY)": {
       "file": "WATERHEN_NORTHERN_COMMUNITY.json",
-      "count": 389,
+      "count": 392,
       "muni_no": 733
     },
     "WEST INTERLAKE (RM)": {
       "file": "WEST_INTERLAKE_RM.json",
-      "count": 4466,
+      "count": 4549,
       "muni_no": 185
     },
     "WEST ST PAUL (RM)": {
       "file": "WEST_ST_PAUL_RM.json",
-      "count": 4964,
+      "count": 4965,
       "muni_no": 201
     },
     "WESTLAKE-GLADSTONE (MUNICIPALITY)": {
       "file": "WESTLAKE-GLADSTONE_MUNICIPALITY.json",
-      "count": 4570,
+      "count": 4655,
       "muni_no": 200
     },
     "WHITEHEAD (RM)": {
       "file": "WHITEHEAD_RM.json",
-      "count": 1673,
+      "count": 1674,
       "muni_no": 202
     },
     "WHITEMOUTH (RM)": {
       "file": "WHITEMOUTH_RM.json",
-      "count": 2342,
+      "count": 2388,
       "muni_no": 203
     },
     "WINKLER (CITY)": {
       "file": "WINKLER_CITY.json",
-      "count": 6038,
+      "count": 6143,
       "muni_no": 463
     },
     "WINNIPEG BEACH (TOWN)": {
       "file": "WINNIPEG_BEACH_TOWN.json",
-      "count": 1795,
+      "count": 1824,
       "muni_no": 465
     },
     "WOODLANDS (RM)": {
       "file": "WOODLANDS_RM.json",
-      "count": 3792,
+      "count": 3838,
       "muni_no": 206
     },
     "YELLOWHEAD (MUNICIPALITY)": {
       "file": "YELLOWHEAD_MUNICIPALITY.json",
-      "count": 3322,
+      "count": 3437,
       "muni_no": 183
     }
   }
