@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-08-04",
-  "generated_at": "2026-08-05T15:53:16-0500",
-  "source": "RollEntry_20260804.gpkg",
+  "snapshot_date": "2026-08-11",
+  "generated_at": "2026-08-12T10:27:02-0500",
+  "source": "RollEntry_20260811.gpkg",
   "fields": ["OBJECTID", "Roll_No_Txt", "Property_Address", "Municipality", "Muni_Name_With_Typ", "Asmt_Roll", "Dwelling_Units", "Frontage_or_Area", "Total_Value", "Asmt_Rpt_Url"],
   "simplify_tolerance_deg": 0.0001,
   "munis": {
@@ -77,7 +77,7 @@
     },
     "BRANDON (CITY)": {
       "file": "BRANDON_CITY.json",
-      "count": 17330,
+      "count": 17329,
       "muni_no": 500
     },
     "BRENDA-WASKADA (MUNICIPALITY)": {
@@ -127,7 +127,7 @@
     },
     "CLANWILLIAM-ERICKSON (MUNICIPALITY)": {
       "file": "CLANWILLIAM-ERICKSON_MUNICIPALITY.json",
-      "count": 1397,
+      "count": 1398,
       "muni_no": 114
     },
     "COLDWELL (RM)": {
@@ -142,7 +142,7 @@
     },
     "CORNWALLIS (RM)": {
       "file": "CORNWALLIS_RM.json",
-      "count": 2050,
+      "count": 2049,
       "muni_no": 116
     },
     "CRANE RIVER (NORTHERN COMMUNITY)": {
@@ -222,7 +222,7 @@
     },
     "ELTON (RM)": {
       "file": "ELTON_RM.json",
-      "count": 1498,
+      "count": 1497,
       "muni_no": 124
     },
     "EMERSON-FRANKLIN (MUNICIPALITY)": {
@@ -247,7 +247,7 @@
     },
     "FLIN FLON (CITY)": {
       "file": "FLIN_FLON_CITY.json",
-      "count": 2851,
+      "count": 2852,
       "muni_no": 540
     },
     "GILBERT PLAINS  (MUNICIPALITY)": {
@@ -267,7 +267,7 @@
     },
     "GLENBORO-SOUTH CYPRESS (MUNICIPALITY)": {
       "file": "GLENBORO-SOUTH_CYPRESS_MUNICIPALITY.json",
-      "count": 1893,
+      "count": 1896,
       "muni_no": 187
     },
     "GLENELLA-LANSDOWNE (MUNICIPALITY)": {
@@ -297,7 +297,7 @@
     },
     "GRASSLAND (MUNICIPALITY)": {
       "file": "GRASSLAND_MUNICIPALITY.json",
-      "count": 3031,
+      "count": 3030,
       "muni_no": 111
     },
     "GREY (RM)": {
@@ -307,7 +307,7 @@
     },
     "HAMIOTA  (MUNICIPALITY)": {
       "file": "HAMIOTA_MUNICIPALITY.json",
-      "count": 1622,
+      "count": 1623,
       "muni_no": 331
     },
     "HANOVER (RM)": {
@@ -372,12 +372,12 @@
     },
     "KELSEY (RM)": {
       "file": "KELSEY_RM.json",
-      "count": 3049,
+      "count": 3048,
       "muni_no": 604
     },
     "KILLARNEY TURTLE MOUNTAIN (MUNICIPALITY)": {
       "file": "KILLARNEY_TURTLE_MOUNTAIN_MUNICIPALITY.json",
-      "count": 3673,
+      "count": 3674,
       "muni_no": 196
     },
     "LA BROQUERIE (RM)": {
@@ -477,7 +477,7 @@
     },
     "MINTO-ODANAH (RM)": {
       "file": "MINTO-ODANAH_RM.json",
-      "count": 1778,
+      "count": 1776,
       "muni_no": 159
     },
     "MONTCALM (RM)": {
@@ -507,7 +507,7 @@
     },
     "MOSSEY RIVER (MUNICIPALITY)": {
       "file": "MOSSEY_RIVER_MUNICIPALITY.json",
-      "count": 2827,
+      "count": 2825,
       "muni_no": 154
     },
     "MOUNTAIN (RM)": {
@@ -562,7 +562,7 @@
     },
     "OAKLAND-WAWANESA (MUNICIPALITY)": {
       "file": "OAKLAND-WAWANESA_MUNICIPALITY.json",
-      "count": 1676,
+      "count": 1677,
       "muni_no": 157
     },
     "OAKVIEW (RM)": {
@@ -652,7 +652,7 @@
     },
     "RIDING MOUNTAIN WEST (RM)": {
       "file": "RIDING_MOUNTAIN_WEST_RM.json",
-      "count": 4053,
+      "count": 4054,
       "muni_no": 181
     },
     "RITCHOT (RM)": {
@@ -667,7 +667,7 @@
     },
     "ROBLIN (MUNICIPALITY)": {
       "file": "ROBLIN_MUNICIPALITY.json",
-      "count": 4269,
+      "count": 4271,
       "muni_no": 182
     },
     "ROCK RIDGE (NORTHERN COMMUNITY)": {
@@ -702,7 +702,7 @@
     },
     "RUSSELL-BINSCARTH (MUNICIPALITY)": {
       "file": "RUSSELL-BINSCARTH_MUNICIPALITY.json",
-      "count": 2548,
+      "count": 2549,
       "muni_no": 445
     },
     "SALT POINT (NORTHERN SETTLEMENT)": {
@@ -792,12 +792,12 @@
     },
     "STE ANNE (TOWN)": {
       "file": "STE_ANNE_TOWN.json",
-      "count": 1109,
+      "count": 1127,
       "muni_no": 351
     },
     "STE. ROSE (MUNICIPALITY)": {
       "file": "STE._ROSE_MUNICIPALITY.json",
-      "count": 1931,
+      "count": 1930,
       "muni_no": 359
     },
     "STEINBACH (CITY)": {
