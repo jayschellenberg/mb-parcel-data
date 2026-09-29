@@ -1,0 +1,59 @@
+# mb-parcel-data
+
+Bulk generated data shards for the [Manitoba parcel search](https://github.com/jayschellenberg/manitoba-opendata-parcelsearch)
+web app. Every file here is fetched by the app at an **immutable commit SHA**
+pinned in `web/src/arcgis.js` (`MB_PARCEL_DATA_REVISION`); nothing reads `main`.
+
+## Delivery
+
+The app fetches same-origin `/gh-data/mb-parcel-data/<sha>/<path>`. On Vercel
+the `api/gh-data.js` edge function proxies that to `raw.githubusercontent.com`
+with Vercel's edge cache in front — immutable per URL, so a repin never needs
+a purge, and GitHub only ever sees Vercel egress rather than client IPs. In
+`npm run dev` the same path is proxied straight to raw by `vite.config.js`.
+
+This repo served from jsDelivr until 2026-08-17, when it outgrew jsDelivr's
+50 MB package limit: cached files kept working while every cold file failed,
+so land cover and water quietly returned null for any municipality nobody had
+fetched before. Direct raw fetches replaced it, then tripped raw's per-IP rate
+limit on the first live check, which is why the proxy exists.
+
+Publishing a rebuilt family is one command in the app repo —
+`update-cdn-pin.ps1` commits and pushes this repo and rewrites the pin — then
+commit the pin. Until that runs, a new family's column stays blank in the app
+rather than saying "None", which is the correct rendering of not knowing.
+
+## Families
+
+All per-municipality families are keyed by the parcel's `Roll_No_Txt` (roll to
+three decimals) inside a shard named for `Muni_Name_With_Typ` (e.g.
+`PINEY (RM)` → `PINEY_RM.json`), with an `_index.json` manifest mapping the
+municipality name to `{ file, count }` plus a `_meta` block carrying the
+build's vintage and sources, which the app's Data Status dialog reads.
+
+| Path | Contents | Built by |
+|---|---|---|
+| `rollentry-snapshot/` | Per-municipality Roll Entry **GeoJSON** FeatureCollections carrying the ten fields the app consumes — the fallback when the live provincial FeatureServer is mid-rebuild. Manifest is nested (`munis: { <name>: { file } }`) and records the snapshot date and source `RollEntry_<date>.gpkg` | `r/build_rollentry_snapshot.R` in the app repo |
+| `assessment/` | Per-municipality assessment / tax-history rows (`{ version, muni_no, fields[8], rows[] }`, 186 shards, ~438k rows) from `tax_history.parquet`; manifest lists `{ muni_no, file, row_count }`. Powers value-based filters such as "Vacant land only" | `r/build_assessment_index.R` in the app repo |
+| `landcover/` | Five farmland cover fractions per parcel — `cult`, `past`, `bush`, `wet`, `other` (0–1, summing to ~1) — collapsed from the 12 classes of NRCan's **2020 Land Cover of Canada** raster (`LCR_RCT_2020`, 30 m), extracted per parcel by the mao-assembly pipeline. Only parcels over 10 acres (`ACRES_THRESHOLD`, kept in sync with `LAND_COVER_MIN_ACRES` in the app). Not an assessor product | `r/build_landcover.R` in the app repo, bridging the mao-assembly Parquet |
+| `masc/` | Per-municipality flat arrays of **MASC quarter-section soil ratings** — `{ q, s, t, r, d, rating, ratings, ra, lat, lon }` — for the MASC overlay. Source is the MASC-SCRAPE run named in `_meta.run` | `r/build_masc_shards.R` in the app repo |
+| `parcel-masc/` | Per-parcel dominant MASC rating by area overlap — `{ rating, ratings, ra, q, s, t, r, d, source, label }` — so the grid's MASC Rating / Risk Area fill without an overlay load. Only parcels overlapping at least one rated quarter or river lot | `r/build_parcel_masc.R` in the app repo |
+| `water/` | Water-influence stamp per parcel — `{ i, c, t, b, d }`: influenced yes/no, class (Waterfront / Direct / Reserve / Near), water-body type and name, distance in feet — from mao-assembly's waterfront detection. Only parcels with a non-"None" classification ship; ~370k of 437k parcels have no water within 50 m and are omitted | `r/build_water.R` in the app repo, bridging the mao-assembly Parquet |
+| `flood/` | Flood-zone membership per parcel — `{ z: { <zone code>: <% of parcel> } }` across up to nine zones (statutory Designated Flood Areas, the 1-in-200 extent, observed 1997/2009/2011 extents, Winnipeg waterway corridors), joined at **full resolution** from MBFloodMapping. Only parcels intersecting at least one zone ship. `_meta` carries each layer's fetch date; two statutory layers are frozen at 2022-02-09 upstream | `r/build_flood.R` in the app repo |
+| `landfacts/` | Open-data land facts for every parcel of **20 acres or more with a MASC rating** (173,697 rolls, 147 municipalities): crop history 2009–2025 from the AAFC Annual Crop Inventory (`cp` crop % and `dom` dominant class per year, `null` = year not observed, never 0), relief and mean slope from NRCan MRDEM-30 (`rel`, `slp`, `z`), mapped wetland share and classes from the Canadian Wetland Inventory v3A at 10 m (`wet`, `wc`), permanent and intermittent open-water shares from JRC Global Surface Water 1984–2021 (`gsw`, `gsi`), and — from 2026-09-15 — the **land mix**: the crop inventory read per pixel over 2021–2025 as `mix` `{ cult, past, bush, wet, other }` fractions of the parcel (a pixel is cultivated when annual crop in ≥ 2 of the 5 years or in 2025 regardless; every other pixel takes its modal non-crop group, shrubland counted as bush), with `cc[0..5]` the % of the parcel cropped in exactly k window years, `cn[1..5]` the part of each also cropped in 2025, and `obs` the share of pixel-years observed. `mix` is absent when the window saw under half the parcel; shards built earlier lack it entirely and the app falls back to `landcover/`. ~260 bytes per parcel; `_meta` carries the year range, the window and cultivated rule, thresholds and sources. In the app this family feeds the **Land Facts** column, popup and CSV, the **Crop History** map overlay (**Years Cropped** / **Land Use** views from the `cp`/`dom` series), and — through `mix` — it is the HEADLINE for the **Land Cover** / **Cult %** columns, popup and Dominant overlay, with `landcover/` shown as the cross-check and a ⚠ where the two disagree by 20 points or more on a bucket | `r/build_landfacts.R` in the app repo (`npm run landfacts:shards`; `--crop-only` rebuilds the crop fields and carries the rest); operating notes in the app's MAINTENANCE.md §6d |
+| `mf-newbuild/` | **Multi-family new construction** on rolls with **3 or more dwelling units**, excluding any roll carrying a farm class (101 municipalities, 607 rolls, 686 events, 170 KB). Dated from 20 years of assessed BUILDING VALUE rather than building permits — outside Winnipeg there is no province-wide permit feed, and MAO publishes dwelling units only as a current scalar with no history. Manitoba freezes assessed values between biennial reassessments, so a within-biennium jump is almost pure physical change: across 2008–2027, 99.8% of Residential 2 rolls move across a reassessment boundary but only 7.9% move within a biennium. Cross-boundary jumps are normalised against the median revaluation factor for that municipality **and** dominant class and carry lower confidence. Each roll holds `du` (current units), `ad`, `cl`, `p` (primary event year) and `e[]` — every event as `{y, k, b, bp, c}`, where `k` is `appeared` / `expanded` / `new_roll` and `c` is `high` / `med` / `low`; `sdu` adds at-sale unit counts from the sales PDF archive where the roll sold. Detection runs at the ROLL level across all classes — requiring Residential 2 in both years finds 2 events province-wide, because a new block arrives as a new roll or reclassifies into R2 the same year the building appears. Event years are ASSESSMENT years and trail completion by about a year. The farm exclusion is load-bearing: 1,222 of the 1,841 rolls with 5+ units are Hutterite colonies at 20–35 units and $20–38M of buildings. In the app this family feeds the **New MF** column, popup and CSV, and the **New Multi-Family** map overlay (**Year** red recency ramp / **Units** blue size ramp) | `r/build_mf_newbuild.R` in the app repo (`npm run mf:shards`) |
+
+Standalone files: `river-lots.json` (river-lot polygons) and `masc-riverlots.json`
+(the same lots with their MASC ratings), read directly by the app.
+The Land Cover Detailed raster is not here either: it is `mb-landcover.pmtiles`
+on R2 (the app's `r/pack_landcover_pmtiles.R`). The province-wide section grid is not here: the app draws it from
+`section-grid.pmtiles` on R2 (see the app's MAINTENANCE.md 1c).
+
+Source data: Manitoba Open Data (Manitoba geoPortal), MASC, NRCan, AAFC, DUC,
+JRC and MBFloodMapping, redistributed with provenance recorded in each
+family's `_meta` and in the app's exports.
+
+**Contract:** the app pins one commit SHA. History here exists only to
+mint immutable SHAs — it may be periodically squashed to keep the repo
+small; only the currently-pinned SHA must remain reachable, so always
+repoint the app before pruning.
