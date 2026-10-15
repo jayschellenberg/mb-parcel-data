@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-09-13",
-  "generated_at": "2026-09-15T04:12:52-0500",
-  "source": "RollEntry_20260913.gpkg",
+  "snapshot_date": "2026-10-11",
+  "generated_at": "2026-10-15T09:13:18+0000",
+  "source": "RollEntry_20261011.gpkg",
   "fields": ["OBJECTID", "Roll_No_Txt", "Property_Address", "Municipality", "Muni_Name_With_Typ", "Asmt_Roll", "Dwelling_Units", "Frontage_or_Area", "Total_Value", "Asmt_Rpt_Url"],
   "simplify_tolerance_deg": 0.0001,
   "munis": {
@@ -17,12 +17,12 @@
     },
     "ALONSA (RM)": {
       "file": "ALONSA_RM.json",
-      "count": 5492,
+      "count": 5493,
       "muni_no": 601
     },
     "ALTONA (TOWN)": {
       "file": "ALTONA_TOWN.json",
-      "count": 2094,
+      "count": 2095,
       "muni_no": 400
     },
     "ARBORG (TOWN)": {
@@ -227,7 +227,7 @@
     },
     "EMERSON-FRANKLIN (MUNICIPALITY)": {
       "file": "EMERSON-FRANKLIN_MUNICIPALITY.json",
-      "count": 3370,
+      "count": 3368,
       "muni_no": 127
     },
     "ETHELBERT (MUNICIPALITY)": {
@@ -302,7 +302,7 @@
     },
     "GREY (RM)": {
       "file": "GREY_RM.json",
-      "count": 3032,
+      "count": 3033,
       "muni_no": 133
     },
     "HAMIOTA  (MUNICIPALITY)": {
@@ -312,7 +312,7 @@
     },
     "HANOVER (RM)": {
       "file": "HANOVER_RM.json",
-      "count": 7780,
+      "count": 7880,
       "muni_no": 135
     },
     "HARRISON PARK (MUNICIPALITY)": {
@@ -382,7 +382,7 @@
     },
     "LA BROQUERIE (RM)": {
       "file": "LA_BROQUERIE_RM.json",
-      "count": 3657,
+      "count": 3669,
       "muni_no": 138
     },
     "LAC DU BONNET (RM)": {
@@ -417,7 +417,7 @@
     },
     "LORNE (MUNICIPALITY)": {
       "file": "LORNE_MUNICIPALITY.json",
-      "count": 2998,
+      "count": 2999,
       "muni_no": 144
     },
     "LOUISE (MUNICIPALITY)": {
@@ -492,7 +492,7 @@
     },
     "MORDEN (CITY)": {
       "file": "MORDEN_CITY.json",
-      "count": 4482,
+      "count": 4485,
       "muni_no": 433
     },
     "MORRIS (RM)": {
@@ -577,7 +577,7 @@
     },
     "PEMBINA (MUNICIPALITY)": {
       "file": "PEMBINA_MUNICIPALITY.json",
-      "count": 3221,
+      "count": 3222,
       "muni_no": 161
     },
     "PIKWITONEI (NORTHERN COMMUNITY)": {
@@ -597,7 +597,7 @@
     },
     "PINEY (RM)": {
       "file": "PINEY_RM.json",
-      "count": 3703,
+      "count": 3769,
       "muni_no": 610
     },
     "PIPESTONE (RM)": {
@@ -607,12 +607,12 @@
     },
     "PORTAGE LA PRAIRIE (CITY)": {
       "file": "PORTAGE_LA_PRAIRIE_CITY.json",
-      "count": 5516,
+      "count": 5519,
       "muni_no": 550
     },
     "PORTAGE LA PRAIRIE (RM)": {
       "file": "PORTAGE_LA_PRAIRIE_RM.json",
-      "count": 6786,
+      "count": 6788,
       "muni_no": 163
     },
     "POWERVIEW-PINE FALLS (TOWN)": {
@@ -647,7 +647,7 @@
     },
     "RHINELAND (MUNICIPALITY)": {
       "file": "RHINELAND_MUNICIPALITY.json",
-      "count": 5158,
+      "count": 5159,
       "muni_no": 164
     },
     "RIDING MOUNTAIN WEST (RM)": {
@@ -682,7 +682,7 @@
     },
     "ROLAND (RM)": {
       "file": "ROLAND_RM.json",
-      "count": 1317,
+      "count": 1319,
       "muni_no": 169
     },
     "ROSEDALE (RM)": {
@@ -702,7 +702,7 @@
     },
     "RUSSELL-BINSCARTH (MUNICIPALITY)": {
       "file": "RUSSELL-BINSCARTH_MUNICIPALITY.json",
-      "count": 2548,
+      "count": 2547,
       "muni_no": 445
     },
     "SALT POINT (NORTHERN SETTLEMENT)": {
@@ -752,7 +752,7 @@
     },
     "SPRINGFIELD (RM)": {
       "file": "SPRINGFIELD_RM.json",
-      "count": 9105,
+      "count": 9107,
       "muni_no": 189
     },
     "ST ANDREWS (RM)": {
@@ -762,7 +762,7 @@
     },
     "ST CLEMENTS (RM)": {
       "file": "ST_CLEMENTS_RM.json",
-      "count": 8489,
+      "count": 8490,
       "muni_no": 176
     },
     "ST FRANCOIS XAVIER (RM)": {
@@ -802,7 +802,7 @@
     },
     "STEINBACH (CITY)": {
       "file": "STEINBACH_CITY.json",
-      "count": 7197,
+      "count": 7209,
       "muni_no": 451
     },
     "STONEWALL (TOWN)": {
@@ -892,7 +892,7 @@
     },
     "WEST INTERLAKE (RM)": {
       "file": "WEST_INTERLAKE_RM.json",
-      "count": 4549,
+      "count": 4550,
       "muni_no": 185
     },
     "WEST ST PAUL (RM)": {
