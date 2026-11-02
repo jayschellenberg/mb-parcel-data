@@ -1,5 +1,7 @@
 # mb-parcel-data
 
+Status: Maintained | Next: tbd | Blocked: none | Updated: 2026-11-01
+
 Bulk generated data shards for the [Manitoba parcel search](https://github.com/jayschellenberg/manitoba-opendata-parcelsearch)
 web app. Every file here is fetched by the app at an **immutable commit SHA**
 pinned in `web/src/arcgis.js` (`MB_PARCEL_DATA_REVISION`); nothing reads `main`.
