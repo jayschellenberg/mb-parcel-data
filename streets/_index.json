@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-22T19:48:30.189Z",
- "snapshot_date": "2026-10-11",
- "source": "RollEntry_20261011.gpkg",
- "streets": 18906,
+ "generated_at": "2026-11-15T09:15:22.929Z",
+ "snapshot_date": "2026-11-08",
+ "source": "RollEntry_20261108.gpkg",
+ "streets": 18924,
  "munis": {
   "AGHAMING (NORTHERN SETTLEMENT)": {
    "file": "AGHAMING_NORTHERN_SETTLEMENT.json",
@@ -11,7 +11,7 @@
   },
   "ALEXANDER (RM)": {
    "file": "ALEXANDER_RM.json",
-   "count": 437,
+   "count": 438,
    "muni_no": 600
   },
   "ALONSA (RM)": {
@@ -21,7 +21,7 @@
   },
   "ALTONA (TOWN)": {
    "file": "ALTONA_TOWN.json",
-   "count": 104,
+   "count": 105,
    "muni_no": 400
   },
   "ARBORG (TOWN)": {
@@ -121,17 +121,17 @@
   },
   "CHURCHILL (TOWN)": {
    "file": "CHURCHILL_TOWN.json",
-   "count": 24,
+   "count": 25,
    "muni_no": 603
   },
   "CLANWILLIAM-ERICKSON (MUNICIPALITY)": {
    "file": "CLANWILLIAM-ERICKSON_MUNICIPALITY.json",
-   "count": 51,
+   "count": 52,
    "muni_no": 114
   },
   "COLDWELL (RM)": {
    "file": "COLDWELL_RM.json",
-   "count": 137,
+   "count": 138,
    "muni_no": 115
   },
   "CORMORANT (NORTHERN COMMUNITY)": {
@@ -141,12 +141,12 @@
   },
   "CORNWALLIS (RM)": {
    "file": "CORNWALLIS_RM.json",
-   "count": 122,
+   "count": 123,
    "muni_no": 116
   },
   "CRANE RIVER (NORTHERN COMMUNITY)": {
    "file": "CRANE_RIVER_NORTHERN_COMMUNITY.json",
-   "count": 4,
+   "count": 5,
    "muni_no": 727
   },
   "CROSS LAKE (NORTHERN COMMUNITY)": {
@@ -166,7 +166,7 @@
   },
   "DAUPHIN (RM)": {
    "file": "DAUPHIN_RM.json",
-   "count": 62,
+   "count": 66,
    "muni_no": 118
   },
   "DAUPHIN RIVER (NORTHERN COMMUNITY)": {
@@ -181,7 +181,7 @@
   },
   "DE SALABERRY (RM)": {
    "file": "DE_SALABERRY_RM.json",
-   "count": 336,
+   "count": 337,
    "muni_no": 119
   },
   "DELORAINE-WINCHESTER (MUNICIPALITY)": {
@@ -251,7 +251,7 @@
   },
   "GILBERT PLAINS  (MUNICIPALITY)": {
    "file": "GILBERT_PLAINS_MUNICIPALITY.json",
-   "count": 48,
+   "count": 49,
    "muni_no": 323
   },
   "GILLAM (TOWN)": {
@@ -371,7 +371,7 @@
   },
   "KELSEY (RM)": {
    "file": "KELSEY_RM.json",
-   "count": 186,
+   "count": 187,
    "muni_no": 604
   },
   "KILLARNEY TURTLE MOUNTAIN (MUNICIPALITY)": {
@@ -381,12 +381,12 @@
   },
   "LA BROQUERIE (RM)": {
    "file": "LA_BROQUERIE_RM.json",
-   "count": 294,
+   "count": 295,
    "muni_no": 138
   },
   "LAC DU BONNET (RM)": {
    "file": "LAC_DU_BONNET_RM.json",
-   "count": 314,
+   "count": 316,
    "muni_no": 139
   },
   "LAC DU BONNET (TOWN)": {
@@ -431,7 +431,7 @@
   },
   "MACDONALD (RM)": {
    "file": "MACDONALD_RM.json",
-   "count": 331,
+   "count": 330,
    "muni_no": 146
   },
   "MALLARD (NORTHERN COMMUNITY)": {
@@ -541,12 +541,12 @@
   },
   "NORFOLK TREHERNE (MUNICIPALITY)": {
    "file": "NORFOLK_TREHERNE_MUNICIPALITY.json",
-   "count": 123,
+   "count": 122,
    "muni_no": 188
   },
   "NORTH CYPRESS-LANGFORD (MUNICIPALITY)": {
    "file": "NORTH_CYPRESS-LANGFORD_MUNICIPALITY.json",
-   "count": 157,
+   "count": 159,
    "muni_no": 155
   },
   "NORTH NORFOLK (MUNICIPALITY)": {
@@ -576,7 +576,7 @@
   },
   "PEMBINA (MUNICIPALITY)": {
    "file": "PEMBINA_MUNICIPALITY.json",
-   "count": 141,
+   "count": 142,
    "muni_no": 161
   },
   "PIKWITONEI (NORTHERN COMMUNITY)": {
@@ -611,17 +611,17 @@
   },
   "PORTAGE LA PRAIRIE (RM)": {
    "file": "PORTAGE_LA_PRAIRIE_RM.json",
-   "count": 294,
+   "count": 291,
    "muni_no": 163
   },
   "POWERVIEW-PINE FALLS (TOWN)": {
    "file": "POWERVIEW-PINE_FALLS_TOWN.json",
-   "count": 83,
+   "count": 81,
    "muni_no": 347
   },
   "PRAIRIE LAKES (RM)": {
    "file": "PRAIRIE_LAKES_RM.json",
-   "count": 170,
+   "count": 171,
    "muni_no": 192
   },
   "PRAIRIE VIEW  (MUNICIPALITY)": {
@@ -651,7 +651,7 @@
   },
   "RIDING MOUNTAIN WEST (RM)": {
    "file": "RIDING_MOUNTAIN_WEST_RM.json",
-   "count": 72,
+   "count": 74,
    "muni_no": 181
   },
   "RITCHOT (RM)": {
@@ -736,7 +736,7 @@
   },
   "SOURIS-GLENWOOD (MUNICIPALITY)": {
    "file": "SOURIS-GLENWOOD_MUNICIPALITY.json",
-   "count": 63,
+   "count": 64,
    "muni_no": 449
   },
   "SOUTH INDIAN LAKE (NORTHERN COMMUNITY)": {
@@ -771,7 +771,7 @@
   },
   "ST LAURENT (RM)": {
    "file": "ST_LAURENT_RM.json",
-   "count": 125,
+   "count": 124,
    "muni_no": 178
   },
   "ST PIERRE-JOLYS (VILLAGE)": {
@@ -781,7 +781,7 @@
   },
   "STANLEY (RM)": {
    "file": "STANLEY_RM.json",
-   "count": 242,
+   "count": 241,
    "muni_no": 190
   },
   "STE ANNE (RM)": {
@@ -801,7 +801,7 @@
   },
   "STEINBACH (CITY)": {
    "file": "STEINBACH_CITY.json",
-   "count": 257,
+   "count": 256,
    "muni_no": 451
   },
   "STONEWALL (TOWN)": {
@@ -811,7 +811,7 @@
   },
   "STUARTBURN (RM)": {
    "file": "STUARTBURN_RM.json",
-   "count": 135,
+   "count": 137,
    "muni_no": 612
   },
   "SWAN RIVER (TOWN)": {
@@ -826,7 +826,7 @@
   },
   "TACHE (RM)": {
    "file": "TACHE_RM.json",
-   "count": 264,
+   "count": 266,
    "muni_no": 194
   },
   "TEULON (TOWN)": {
